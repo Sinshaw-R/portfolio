@@ -1,0 +1,40 @@
+/* Import Google Fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Inter:wght@400;600&family=Bodoni+Moda:wght@400;700&display=swap');
+
+/* Import Tailwind */
+@import "tailwindcss";
+
+@tailwind utilities;
+
+
+/* Dark mode variant */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Define custom font families */
+@theme {
+  --font-header: "Roboto", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-logo: "Bodoni Moda", serif;
+}
+
+/* Map utilities to custom fonts */
+@utility font-header {
+  font-family: var(--font-header);
+}
+
+@utility font-body {
+  font-family: var(--font-body);
+}
+
+@utility font-logo {
+  font-family: var(--font-logo);
+}
+
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased text-zinc-900 dark:text-zinc-100 font-body;
+}
