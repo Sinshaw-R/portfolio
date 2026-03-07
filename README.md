@@ -1,73 +1,102 @@
-# React + TypeScript + Vite
+# Sinshaw-R Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This website reflects my skills, projects, and personal brand, built with **Next.js** and **TypeScript** for a modern, high-performance web experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+[![Portfolio Live](https://img.shields.io/badge/Live-Portfolio-blue?style=for-the-badge)](YOUR_LIVE_LINK_HERE)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📝 About
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This is my personal portfolio website, crafted to showcase my background, development projects, experience, and values. It serves as an interactive resume and provides contact options for collaboration or networking.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Fast and SEO-friendly:** Powered by Next.js’s SSR and SSG capabilities
+- **Typed codebase:** Built with TypeScript for better reliability
+- **Project highlights:** Showcases select works with external GitHub links
+- **Responsive design:** Mobile-friendly and accessible UI
+- **Contact form:** Easy way for visitors to get in touch
+- **(Optional) Theme switching:** Light/Dark mode
+
+---
+
+## 🛠️ Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [ESLint & Prettier](https://nextjs.org/docs/basic-features/eslint)
+- [CSS Modules](https://nextjs.org/docs/basic-features/built-in-css-support) / [Tailwind CSS](https://tailwindcss.com/) (if used)
+
+---
+
+## 📦 Getting Started
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Sinshaw-R/portfolio.git
+cd portfolio
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Project Structure
+
+```text
+/
+├── public/         # Static assets
+├── src/            # Source code
+│   ├── components/ # Reusable components
+│   ├── pages/      # Next.js pages
+│   └── styles/     # CSS or Tailwind configs
+├── next.config.js  # Next.js configuration
+├── tsconfig.json   # TypeScript configuration
+├── README.md
+└── ...
 ```
+
+---
+
+## 🚧 Roadmap
+
+- [ ] Add a blog or articles section
+- [ ] Enhance accessibility (a11y)
+- [ ] Optimize for performance/lighthouse
+- [ ] Deployment on Vercel/Netlify/other
+
+---
+
+## 🤝 Contributing
+
+Contributions and suggestions are welcomed! Please fork the repository, make your changes, and create a pull request.
+
+---
+
+## 📫 Contact
+
+Let’s connect!  
+[LinkedIn](YOUR_LINKEDIN_URL) | Email: YOUR_EMAIL@example.com
+
+---
+
+## ⭐️ Acknowledgements
+
+- Powered by [Next.js](https://nextjs.org/) and [TypeScript](https://www.typescriptlang.org/)
+- Inspired by the open source dev community
+
+---
+
+> **Personal Portfolio to showcase my personal brands**  
+> Designed & Built by [Sinshaw-R](https://github.com/Sinshaw-R)
